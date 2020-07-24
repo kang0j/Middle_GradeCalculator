@@ -1,3 +1,2 @@
-# BMI Calculator
-
-Click [here](https://willdowglas.github.io/html-css-js/BMI/) to view.
+# GradeCalculator
+중학교 등급 계산기 웹 서비스
