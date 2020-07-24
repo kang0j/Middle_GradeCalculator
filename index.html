@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>등급 계산기</title>
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 mx-auto main">
+        <br>
+        <h1 class="text-center"><strong>등급 계산기</strong></h1>
+        <p class="text-center space"><strong>A, B, C, D, E 등급을 계산합니다. [중학]</strong><br><br>수행 반영 비율은 수행평가의 만점을 입력하면 됩니다.<br>(20점 만점인 경우 20 입력)</p>
+        <h5>지필평가 영역</h5>
+        <form>
+            <div class="form-group row">
+              <label for="Height" class="col-sm-2 col-form-label">1차 지필</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="1st_exam" placeholder="없는 경우 공백으로">
+              </div>
+            </div>
+            <div class="form-group row space">
+                <label for="Weight" class="col-sm-2 col-form-label">2차 지필</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="2nd_exam" placeholder="숫자로 입력해주세요">
+                </div>
+              </div>
+        </form>
+          
+        <h5>수행평가 영역</h5>
+        <form>
+            <div class="form-group row">
+              <label for="Height" class="col-sm-2 col-form-label">수행 점수</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="project_score" placeholder="숫자만 입력헤주세요.">
+              </div>
+            </div>
+            <div class="form-group row space">
+                <label for="Weight" class="col-sm-2 col-form-label">수행 반영 비율</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="project_ratio" placeholder="숫자만 입력해주세요, 단위: %">
+                </div>
+              </div>
+          </form>
+          
+        <button type="submit" class="btn mb-3 btn-block" onclick="main()">계산하기</button>
+        <p id="output" class="text-center"></p>
+          <center><br>© 2020 | Made by 강재현 <br><a href="mailto:hellokang@kakao.com">문의하기</a></center>
+      </div>
+    </div>
+  </div>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
