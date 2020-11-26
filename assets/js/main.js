@@ -17,8 +17,11 @@ function main () {
           var ts = (fe + se) * (pr_inverse/2)
       }
       
+      
       var a = ts + ps
-      var result = a.toFixed(2)
+      var result_process = a.toFixed(2)
+      var result = a.toFixed(0)
+      var ts_v = ts.toFixed(2)
       
       if (result>100){
           document.getElementById('output').innerHTML = "<strong>올바른 값을 입력해주세요.</strong><br>(총점은 100을 넘을 수 없습니다)";
@@ -30,7 +33,7 @@ function main () {
       
       var output =  result+'점'
       
-      var message = '<br>계산 과정: 지필 점수('+ts+') + 수행 점수('+ps+')'
+      var message = '<br>계산 과정: 지필 점수('+ts_v+') + 수행 점수('+ps+')='+result_process+"<br><br><h8>본 결과는 추정치입니다.<br>계산 방식에 따라 실제 결과와 다를 수 있습니다.</h8>"
 
       if (result>=90){
           var grade = ' (A)'
@@ -44,7 +47,7 @@ function main () {
           var grade = ' (E)'
       }
       
-      document.getElementById('output').innerHTML = '<h4>원 점수는 <stong>'+output+grade+'</strong> 입니다.</h4>'+message;
+      document.getElementById('output').innerHTML = '<h4><stong>'+output+grade+'</strong></h4>'+message;
       }
   }
 }

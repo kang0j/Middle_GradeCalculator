@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QLWQ4LJ2BW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QLWQ4LJ2BW');
+</script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -13,8 +22,8 @@
     <div class="row">
       <div class="col-sm-6 mx-auto main">
         <br>
-        <h1 class="text-center"><strong>등급 계산기</strong></h1>
-        <p class="text-center space"><strong>A, B, C, D, E 등급을 계산합니다. [중학]</strong><br><br>수행 반영 비율은 수행평가의 만점을 입력하면 됩니다.<br>(20점 만점인 경우 20 입력)</p>
+        <h1 class="text-center"><strong>중학교 등급 계산기</strong></h1>
+        <p class="text-center space"><strong>A, B, C, D, E 등급을 계산합니다.</strong><br><br>수행 반영 비율은 수행평가의 만점을 입력하면 됩니다.<br>(20점 만점인 경우 20 입력)</p>
         <h5>지필평가 영역</h5>
         <form>
             <div class="form-group row">
@@ -36,20 +45,20 @@
             <div class="form-group row">
                 <label for="Weight" class="col-sm-2 col-form-label">수행 반영 비율</label>
                 <div class="col-sm-10">
-                  <input type="text" class="form-control" id="project_ratio" placeholder="숫자만 입력해주세요, 단위: %">
+                  <input type="text" class="form-control" id="project_ratio" placeholder="숫자만 입력해주세요 | 예시: 40">
                 </div>
               </div>            
             <div class="form-group row space">
               <label for="Height" class="col-sm-2 col-form-label">수행 점수</label>
               <div class="col-sm-10">
-                <input type="text" class="form-control" id="project_score" placeholder="숫자만 입력헤주세요.">
+                <input type="text" class="form-control" id="project_score" placeholder="숫자만 입력해주세요 | 예시: 35">
               </div>
             </div>
           </form>
           
         <button type="submit" class="btn mb-3 btn-block" onclick="main()">계산하기</button>
         <p id="output" class="text-center"></p>
-          <center><br>© 2020 | Made by 강재현 <br>본 페이지는 사용자의 정보를 무단으로 수집하지 않습니다.<br><br><a href="mailto:hellokang@kakao.com">문의하기</a><br><br></center>
+          <center><br>© 2020 | Made by 강재현 <br>본 페이지는 사용자의 정보를 무단으로 수집하지 않습니다.<br><br><a href="mailto:admin@withkang.org">문의하기</a><br><br></center>
       </div>
     </div>
   </div>
